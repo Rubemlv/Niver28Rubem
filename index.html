@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Rubem</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #2e2e2e; /* Fundo cinza carvão */
+            color: #f0e68c; /* Texto amarelo claro */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .container {
+            background-color: #3c3c3c; /* Caixa em cinza médio */
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+            max-width: 90%;
+            text-align: center;
+            animation: fadeIn 1.2s ease;
+            position: relative;
+        }
+        h1 {
+            color: #f0e68c; /* Amarelo claro */
+            font-weight: 600;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+            color: #fafafa; /* Branco fosco */
+        }
+        .btn {
+            padding: 12px 25px;
+            background-color: #f0e68c; /* Botões amarelo claro */
+            color: #2e2e2e; /* Texto escuro nos botões */
+            border: none;
+            border-radius: 30px;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px 0;
+            font-size: 1.1em;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .btn:hover {
+            background-color: #d3c23c; /* Tom mais escuro de amarelo */
+            transform: scale(1.05);
+        }
+        h3 {
+            color: #f0e68c; /* Amarelo claro */
+            margin-bottom: 15px;
+        }
+        .observation {
+            font-size: 0.9em; /* Tamanho da fonte menor */
+            color: #fafafa; /* Branco fosco */
+            margin-top: 10px; /* Margem superior */
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        .profile-pic {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease;
+        }
+        .profile-pic:hover {
+            transform: scale(1.1);
+            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Media Queries para Responsividade */
+        @media (min-width: 600px) {
+            .container {
+                max-width: 500px;
+            }
+            h1 {
+                font-size: 2.5em;
+            }
+            .profile-pic {
+                width: 150px;
+                height: 150px;
+            }
+        }
+        @media (min-width: 900px) {
+            body {
+                padding: 40px;
+            }
+            .container {
+                max-width: 600px;
+                padding: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Adiciona a foto de perfil -->
+        <img src="/images/WhatsApp Image 2024-10-22 at 17.02.57.jpeg" alt="Foto de Rubem" class="profile-pic">
+
+        <h1>Happy Birthday Rubem</h1>
+        <!-- Adiciona um GIF animado, agora centralizado e menor -->
+        <img src="/images/churrasco.png" alt="GIF de comemoração" style="width: 10%; max-width: 80px; display: block; margin: 20px auto;">
+
+        <p>Venha celebrar comigo comendo aquele churrasco!</p>
+        <p><strong>Data:</strong> 26 de Outubro de 2024</p>
+        <p><strong>Hora:</strong> 19:00h</p>
+        <p><strong>Local:</strong> Setor São Francisco, Casa da Nali e do Ronaldo</p>
+        
+        <p class="observation">Obs: Por favor, tragam um pouco de carne e sua bebida favorita.</p>
+
+        <h3>Confirme sua presença:</h3>
+        <a href="https://gforms.app/p/k8AcMo7" class="btn">Confirmar Presença</a>
+        
+        <h3>Veja a localização:</h3>
+        <a href="https://maps.app.goo.gl/kNHxixrfJ6t1Nt98A" class="btn">Abrir no Google Maps</a>
+    </div>
+</body>
+</html>
